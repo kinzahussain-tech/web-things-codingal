@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="orange">
+    <marquee><b><u>My best Collection</u></b></marquee>
+    <ul>
+        <li> My Favourite food</li>
+        <ol>
+            <li>Rice</li>
+            <li>Pizza</li>
+            <li>Noodles</li>
+        </ol>
+        <li>Food I dont like</li>
+        <ol>
+            <li>sugary stuff</li>
+            <li>vegetable</li>
+            <li>water melon</li>
+        </ol>
+    </ul>
+</body>
+</html>
