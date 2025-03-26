@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Annual Day Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required> <br> <br>
+                
+                <label for="grade">Select Grade</label>
+                <select id="grade" name="grade" required>
+                    <option value="">Choose Grade</option>
+                    <option value="1">Grade 1</option>
+                    <option value="2">Grade 2</option>
+                    <option value="3">Grade 3</option>
+                    <option value="4">Grade 4</option>
+                    <option value="5">Grade 5</option>
+                    <option value="6">Grade 6</option>
+                </select>
+                <br> <br>
+                <label>Gender</label>
+                <div class="gender-container">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Event Participation</legend>
+                <label for="event">Choose Event</label>
+                <select id="event" name="event" required>
+                    <option value="">Select Event</option>
+                    <option value="dance">Dance</option>
+                    <option value="singing">Singing</option>
+                    <option value="drama">Drama</option>
+                    <option value="speech">Speech</option>
+                    <option value="art">Art Competition</option>
+                </select>
+            </fieldset>
+            
+            <button type="submit">Register</button>
+        </form>
+</body>
+</html>
