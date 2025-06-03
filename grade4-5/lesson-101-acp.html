@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pakistani Cuisines Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Sticky Flexbox Navbar */
+        .navbar {
+            background-color: #a52a2a;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #ffd700;
+        }
+
+        h1 {
+            color: #a52a2a;
+            text-align: center;
+            border-bottom: 2px solid #a52a2a;
+            padding: 20px 0 10px;
+            margin-top: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #006400;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            padding: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+            letter-spacing: 0.5px;
+            padding: 10px 0;
+        }
+
+        ul {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 17px;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding-left: 10px;
+        }
+
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .image-section img {
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            transition: transform 0.3s ease;
+            padding: 5px;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+
+        iframe {
+            display: block;
+            margin: 30px auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        strong {
+            color: #b22222;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Navigation Bar using Flexbox -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#dishes">Dishes</a>
+        <a href="#images">Images</a>
+        <a href="#video">Video</a>
+        <a href="#thanks">Thanks</a>
+    </div>
+
+    <h1 id="home">🍛 Welcome to the Pakistani Cuisines Blog</h1>
+    <p>Explore the rich and flavorful world of traditional Pakistani dishes! These recipes reflect the heart of our
+        culture and hospitality.</p>
+
+    <h2 id="dishes">🌟 Popular Pakistani Dishes</h2>
+    <ul>
+        <li><strong>Biryani</strong> – A spicy rice dish with meat and potatoes</li>
+        <li><strong>Karahi</strong> – Cooked in a wok with tomatoes, spices, and meat</li>
+        <li><strong>Haleem</strong> – A thick stew of meat, lentils, and wheat</li>
+        <li><strong>Nihari</strong> – A slow-cooked meat stew, usually eaten for breakfast</li>
+        <li><strong>Chapli Kebab</strong> – Minced meat patties with herbs and spices</li>
+    </ul>
+
+    <h2 id="images">🍽️ Mouth-Watering Images</h2>
+    <div class="image-section">
+        <img src="https://cdn.pixabay.com/photo/2020/07/13/14/19/biryani-5401020_1280.jpg" alt="Biryani">
+        <img src="https://i.ytimg.com/vi/2PrJz
