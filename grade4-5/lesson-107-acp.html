@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>scrollspy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        #section1 {
+            padding-top: 50px;
+            height: 200px;
+            color: #fff;
+            background-color: #1E86E4;
+        }
+
+        #section2 {
+            padding-top: 50px;
+            height: 200px;
+            color: #fff;
+            background-color: #845eb7;
+        }
+
+        #section3 {
+            padding-top: 50px;
+            height: 200px;
+            color: #fff;
+            background-color: #ff9800;
+        }
+
+        #sectionPortfolio {
+            padding: 50px 20px;
+            color: #fff;
+            background-color: #4CAF50;
+        }
+
+        .portfolio-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .portfolio-item h4 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .portfolio-item p {
+            font-size: 14px;
+        }
+
+        #section41 {
+            padding-top: 50px;
+            height: 200px;
+            color: #fff;
+            background-color: #00bcd4;
+        }
+
+        #section42 {
+            padding-top: 50px;
+            height: 200px;
+            color: #fff;
+            background-color: #009688;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">About Us</a></li>
+                        <li><a href="#section3">Services</a></li>
+                        <li><a href="#sectionPortfolio">Portfolio</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact us<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Login</a></li>
+                                <li><a href="#section42">Registration</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="section1" class="container-fluid">
+        <h1>Home</h1>
+        <p>Welcome to Codingal</p>
+    </div>
+
+    <div id="section2" class="container-fluid">
+        <h1>About Us</h1>
+        <p>We are passionate about coding education and technology learning.</p>
+    </div>
+
+    <div id="section3" class="container-fluid">
+        <h1>Services</h1>
+        <p>We provide coding classes, web development, and project guidance.</p>
+    </div>
+
+    <!-- New Portfolio Section -->
+    <div id="sectionPortfolio" class="container-fluid">
+        <div class="container">
+            <h1 class="text-center">Our Portfolio</h1>
+            <p class="text-center">Take a look at some of our recent creative projects and success stories from our
+                talented students and team.</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/350x200" alt="Project 1">
+                        <h4>E-Commerce Website</h4>
+                        <p>A modern online store built with HTML, CSS, and JavaScript for smooth shopping experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/350x200" alt="Project 2">
+                        <h4>Educational Mobile App</h4>
+                        <p>A fun and interactive app to help students learn coding through games and challenges.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-item">
+                        <img src="https://via.placeholder.com/350x200" alt="Project 3">
+                        <h4>Portfolio Website</h4>
+                        <p>A personal portfolio site to showcase skills, projects, and achievements in style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section41" class="container-fluid">
+        <h1>Login</h1>
+        <p>Access your account here.</p>
+    </div>
+
+    <div id="section42" class="container-fluid">
+        <h1>Registration</h1>
+        <p>Create your account to join our community.</p>
+    </div>
+
+</body>
+
+</html>

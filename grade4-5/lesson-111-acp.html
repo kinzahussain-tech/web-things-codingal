@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Solar System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .description {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="pageHeader"></header>
+    <div id="info" class="description"></div>
+
+    <script>
+        // Create Header
+        let header = document.getElementById("pageHeader");
+        header.innerHTML = "<h1>Welcome to Our Solar System</h1>";
+
+        // Create Description
+        let description = document.getElementById("info");
+        description.innerHTML = `
+        <p>The Solar System is made up of the Sun and all the celestial bodies that orbit it. 
+        This includes eight planets, their moons, dwarf planets, comets, asteroids, and meteoroids. 
+        The Sun is the center and provides the light and heat necessary for life on Earth.</p>
+        <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+        </ul>
+    `;
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic CSS in Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            border: 2px solid #ccc;
+            padding: 15px;
+            width: 250px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Contact Form</h2>
+    <form id="myForm">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <button type="button" onclick="changeFormStyle()">Change Form Style</button>
+    </form>
+
+    <script>
+        function changeFormStyle() {
+            let form = document.getElementById("myForm");
+
+            // Change form CSS dynamically
+            form.style.backgroundColor = "#dfe6e9";
+            form.style.border = "3px solid #0984e3";
+            form.style.borderRadius = "15px";
+            form.style.boxShadow = "0px 4px 10px rgba(0,0,0,0.2)";
+            form.style.padding = "20px";
+
+            // Change input fields style
+            let inputs = form.getElementsByTagName("input");
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].style.border = "2px solid #0984e3";
+                inputs[i].style.backgroundColor = "#fff";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

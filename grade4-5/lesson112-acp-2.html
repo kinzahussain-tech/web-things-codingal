@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        .hobby {
+            display: none;
+            /* Hidden by default */
+            margin-top: 10px;
+            padding: 8px;
+            background: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome!</h1>
+    <p id="message"></p>
+
+    <!-- Buttons -->
+    <button class="btn" onclick="toggleHobby('hobby1')">Hobby 1</button>
+    <button class="btn" onclick="toggleHobby('hobby2')">Hobby 2</button>
+    <button class="btn" onclick="toggleHobby('hobby3')">Hobby 3</button>
+    <button class="btn" onclick="toggleHobby('hobby4')">Hobby 4</button>
+
+    <!-- Hobby Sections -->
+    <div id="hobby1" class="hobby">Reading books 📚</div>
+    <div id="hobby2" class="hobby">Coding fun projects 💻</div>
+    <div id="hobby3" class="hobby">Photography 📸</div>
+    <div id="hobby4" class="hobby">Gardening 🌱</div>
+
+    <script>
+        // Page load event
+        window.onload = function () {
+            document.getElementById("message").innerHTML =
+                "Hi there! Click the buttons below to toggle my hobbies.";
+        };
+
+        // Toggle function
+        function toggleHobby(hobbyId) {
+            let hobbyDiv = document.getElementById(hobbyId);
+            if (hobbyDiv.style.display === "none" || hobbyDiv.style.display === "") {
+                hobbyDiv.style.display = "block"; // Show
+            } else {
+                hobbyDiv.style.display = "none"; // Hide
+            }
+        }
+    </script>
+
+</body>
+
+</html>

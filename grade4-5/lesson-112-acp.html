@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Hobbies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome!</h1>
+    <p id="message"></p>
+    <button id="showHobbies">Show My Hobbies</button>
+    <p id="hobbyList"></p>
+
+    <script>
+        // Event when page loads
+        window.onload = function () {
+            document.getElementById("message").innerHTML =
+                "Hi there! I have some interesting hobbies to share.";
+        };
+
+        // Event when button is clicked
+        document.getElementById("showHobbies").onclick = function () {
+            document.getElementById("hobbyList").innerHTML =
+                "<ul>" +
+                "<li>Reading books</li>" +
+                "<li>Coding fun projects</li>" +
+                "<li>Photography</li>" +
+                "<li>Gardening</li>" +
+                "</ul>";
+        };
+    </script>
+
+</body>
+
+</html>
