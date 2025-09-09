@@ -1,0 +1,33 @@
+# empty dictionary
+my_dict = {}
+
+# dictionary with integer keys
+my_dict = {1: 'coding', 2: 'python'}
+
+# dictionary with mixed keys
+my_dict = {'name': 'Kinza', 1: [2, 4, 3]}
+
+my_dict = {'name': 'Ejaz', 'age': 33}
+
+# Output: Jack
+print(my_dict['name'])
+print(my_dict.get('age'))
+
+# update value
+my_dict['age'] = 44
+print(my_dict)
+
+# add item
+my_dict['address'] = 'Saudia'
+print(my_dict)
+
+# remove particular element
+my_dict.pop('age')
+print(my_dict)
+
+# access a particular element
+print("Address :", my_dict.get('address'))
+
+# remove all the elements
+my_dict.clear()
+print(my_dict)
